@@ -8,6 +8,8 @@ import {MainComponent} from './components/main/main';
 import {HeaderComponent} from './components/header/header';
 import {TitleComponent} from './components/title/title';
 import {FooterComponent} from './components/footer/footer';
+import {NgGridstack} from './components/ng-gridstack/ng-gridstack';
+import {NgGridstackItem} from './components/ng-gridstack-item/ng-gridstack-item';
 
 @NgModule({
   imports: [
@@ -20,7 +22,9 @@ import {FooterComponent} from './components/footer/footer';
     MainComponent,
     HeaderComponent,
     TitleComponent,
-    FooterComponent
+    FooterComponent,
+    NgGridstack,
+    NgGridstackItem
   ],
   bootstrap: [RootComponent]
 })

@@ -1,0 +1,8 @@
+<div #gridWrapper class="grid-stack grid-stack-animate"
+    (change)=onChange.emit($event)
+    (dragstart)=onDragStart.emit($event)
+    (dragstop)=onDragStop.emit($event)
+    (resizestart)=onResizeStart.emit($event)
+    (resizestop)=onResizeStop.emit($event)>
+  <ng-content select="grid-stack-item"></ng-content>
+</div>

@@ -1,8 +1,8 @@
 <div class="main-container">
   <fountain-header></fountain-header>
   <main class="main">
-    <fountain-title></fountain-title>
-    <fountain-techs></fountain-techs>
+    <ng-gridstack>
+      <grid-stack-item *ngFor="let opt of defaultOptions" [options]="opt">{{opt.name}}</grid-stack-item>
+    </ng-gridstack>
   </main>
-  <fountain-footer></fountain-footer>
 </div>

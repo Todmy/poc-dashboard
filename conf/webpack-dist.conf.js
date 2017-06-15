@@ -8,6 +8,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
+  resolve: {
+    alias: {
+      'jquery-ui': path.resolve(__dirname, '../node_modules/jquery-ui/ui')
+    }
+  },
   module: {
     loaders: [
       {
@@ -16,12 +21,12 @@ module.exports = {
           'json-loader'
         ]
       },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-        enforce: 'pre'
-      },
+      // {
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   loader: 'eslint-loader',
+      //   enforce: 'pre'
+      // },
       {
         test: /\.(css|scss)$/,
         loaders: ExtractTextPlugin.extract({
