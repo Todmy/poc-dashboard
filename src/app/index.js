@@ -8,6 +8,7 @@ import {MainComponent} from './components/main/main';
 import {HeaderComponent} from './components/header/header';
 import {TitleComponent} from './components/title/title';
 import {FooterComponent} from './components/footer/footer';
+import {DragableDashboardDirective} from './components/dragable-dashboard/dragable-dashboard';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import {FooterComponent} from './components/footer/footer';
     MainComponent,
     HeaderComponent,
     TitleComponent,
-    FooterComponent
+    FooterComponent,
+    DragableDashboardDirective
   ],
   bootstrap: [RootComponent]
 })

@@ -1,3 +1,9 @@
+@import '~dragula/dist/dragula.css';
+
+[movable=true] {
+  cursor: move;
+}
+
 html, body, #root {
   margin: 0;
   height: 100%;

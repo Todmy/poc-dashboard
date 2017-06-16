@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import './main.scss';
 
 @Component({
   selector: 'fountain-app',
